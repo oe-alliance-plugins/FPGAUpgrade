@@ -1,0 +1,18 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "Upgrade your system FPGA",
+  "description_recipe": "Upgrade your system FPGA",
+  "history_source_dir": "FPGAUpgrade",
+  "internal_package_name": "enigma2-plugin-systemplugins-fpgaupgrade",
+  "module_dir_name": "FPGAUpgrade",
+  "output_subdir": "FPGAUpgrade",
+  "package_name": "enigma2-plugin-systemplugins-fpgaupgrade",
+  "plugin_src_rel": "FPGAUpgrade",
+  "python_package": "FPGAUpgrade",
+  "rdepends_recipe": "",
+  "replaces": "",
+  "repo_name": "FPGAUpgrade",
+  "rrecommends": "",
+  "rreplaces": ""
+}
