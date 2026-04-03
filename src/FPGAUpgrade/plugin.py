@@ -20,10 +20,8 @@ from Tools.Directories import fileExists
 
 from Components.Label import Label
 from Components.Slider import Slider
-from Components.Pixmap import Pixmap
 from Components.FileList import FileList
 from Components.ActionMap import ActionMap
-from Components.PluginComponent import plugins
 from Components.Sources.StaticText import StaticText
 
 STATUS_READY = 0
@@ -326,7 +324,7 @@ class FPGAUpgrade(Screen):
 		path = ''
 		try:
 			path = self.SOURCELIST.getCurrentDirectory() + self.SOURCELIST.getFilename()
-		except:
+		except Exception:
 			#self.session.open(MessageBox, _("Can't select directory."), MessageBox.TYPE_INFO, timeout = 5)
 			return
 
@@ -370,13 +368,13 @@ class FPGAUpgrade(Screen):
 		test_opener = urllib.URLopener()
 		try:
 			test_opener.open(self.DOWNLOAD_URL)
-		except:
+		except Exception:
 			self.session.open(MessageBox, _('File not found'), MessageBox.TYPE_INFO, timeout=5)
 			del test_opener
 			return
 		try:
 			fname, header = urlretrieve(self.DOWNLOAD_URL, self.DOWNLOAD_TAR_PATH + self.DOWNLOAD_FILE_NAME, self.doHook)
-		except IOError as msg:
+		except OSError as msg:
 			self.session.open(MessageBox, _(str(msg)), MessageBox.TYPE_INFO, timeout=5)
 			del test_opener
 			return
