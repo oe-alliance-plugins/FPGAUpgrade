@@ -383,9 +383,9 @@ class FPGAUpgrade(Screen):
 		before_name = ''
 		self.SOURCELIST.changeDir(self.DOWNLOAD_TAR_PATH)
 		self.SOURCELIST.moveToIndex(0)
-		while cmp(self.SOURCELIST.getFilename(), self.DOWNLOAD_FILE_NAME) != 0:
+		while self.SOURCELIST.getFilename() != self.DOWNLOAD_FILE_NAME:
 			self.SOURCELIST.down()
-			if cmp(before_name, self.SOURCELIST.getFilename()) == 0:
+			if before_name == self.SOURCELIST.getFilename():
 				break
 			before_name = self.SOURCELIST.getFilename()
 
