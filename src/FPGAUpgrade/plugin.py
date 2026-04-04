@@ -363,8 +363,6 @@ class FPGAUpgrade(Screen):
 		self.session.openWithCallback(self.doUpgradeHandler, MessageBox, _(message), MessageBox.TYPE_YESNO, timeout=10, default=True)
 
 	def onClickBlue(self):
-		fname = ''
-		header = ''
 		test_opener = urllib.URLopener()
 		try:
 			test_opener.open(self.DOWNLOAD_URL)
@@ -372,13 +370,14 @@ class FPGAUpgrade(Screen):
 			self.session.open(MessageBox, _('File not found'), MessageBox.TYPE_INFO, timeout=5)
 			del test_opener
 			return
+
 		try:
-			fname, header = urlretrieve(self.DOWNLOAD_URL, self.DOWNLOAD_TAR_PATH + self.DOWNLOAD_FILE_NAME, self.doHook)
+			_, _ = urlretrieve(self.DOWNLOAD_URL, self.DOWNLOAD_TAR_PATH + self.DOWNLOAD_FILE_NAME, self.doHook)
 		except OSError as msg:
 			self.session.open(MessageBox, _(str(msg)), MessageBox.TYPE_INFO, timeout=5)
-			del test_opener
+			del test_opener  # noqa: F821
 			return
-		del test_opener
+		del test_opener  # noqa: F821
 
 		before_name = ''
 		self.SOURCELIST.changeDir(self.DOWNLOAD_TAR_PATH)
