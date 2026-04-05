@@ -7,7 +7,7 @@ import _thread
 
 from enigma import eTimer
 
-from urllib.request import urlretrieve, URLopener
+from urllib.request import urlretrieve, urlopen
 
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
@@ -361,21 +361,17 @@ class FPGAUpgrade(Screen):
 		self.session.openWithCallback(self.doUpgradeHandler, MessageBox, _(message), MessageBox.TYPE_YESNO, timeout=10, default=True)
 
 	def onClickBlue(self):
-		test_opener = URLopener()
 		try:
-			test_opener.open(self.DOWNLOAD_URL)
-		except Exception:
+			urlopen(self.DOWNLOAD_URL)
+		except (Exception):
 			self.session.open(MessageBox, _('File not found'), MessageBox.TYPE_INFO, timeout=5)
-			del test_opener
 			return
 
 		try:
 			_, _ = urlretrieve(self.DOWNLOAD_URL, self.DOWNLOAD_TAR_PATH + self.DOWNLOAD_FILE_NAME, self.doHook)
 		except OSError as msg:
 			self.session.open(MessageBox, _(str(msg)), MessageBox.TYPE_INFO, timeout=5)
-			del test_opener  # noqa: F821
 			return
-		del test_opener  # noqa: F821
 
 		before_name = ''
 		self.SOURCELIST.changeDir(self.DOWNLOAD_TAR_PATH)
