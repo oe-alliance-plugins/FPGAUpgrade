@@ -1,15 +1,13 @@
-from __future__ import print_function
 # for localized messages
 from . import _
 
 import os
 import fcntl
-from six.moves import _thread
+import _thread
 
 from enigma import eTimer
 
-from six.moves.urllib.request import urlretrieve
-from six.moves import urllib
+from urllib.request import urlretrieve, URLopener
 
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
@@ -363,7 +361,7 @@ class FPGAUpgrade(Screen):
 		self.session.openWithCallback(self.doUpgradeHandler, MessageBox, _(message), MessageBox.TYPE_YESNO, timeout=10, default=True)
 
 	def onClickBlue(self):
-		test_opener = urllib.URLopener()
+		test_opener = URLopener()
 		try:
 			test_opener.open(self.DOWNLOAD_URL)
 		except Exception:
