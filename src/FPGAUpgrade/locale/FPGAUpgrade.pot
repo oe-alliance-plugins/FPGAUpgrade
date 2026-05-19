@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the FPGAUpgrade package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: FPGAUpgrade\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-03 14:48+0100\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +17,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../plugin.py:211
 #, python-format
 msgid "%d / 100"
 msgstr ""
 
+#: ../plugin.py:168
 msgid "Can't cancel during upgrade!!"
 msgstr ""
 
+#: ../plugin.py:251
 msgid "Close"
 msgstr ""
 
+#: ../plugin.py:254
 msgid "Download"
 msgstr ""
 
+#: ../plugin.py:310
 msgid "Downloaded "
 msgstr ""
 
+#: ../plugin.py:312
 msgid "Downloading..."
 msgstr ""
 
+#: ../plugin.py:205
 #, python-format
 msgid ""
 "Error[%d] : %s.\n"
 "Press OK to exit."
 msgstr ""
 
+#: ../plugin.py:249 ../plugin.py:415
 msgid "FPGA Upgrade"
 msgstr ""
 
+#: ../plugin.py:367
 msgid "File not found"
 msgstr ""
 
+#: ../plugin.py:170
 msgid "Status : 0%"
 msgstr ""
 
+#: ../plugin.py:191
 msgid "Succeed"
 msgstr ""
 
+#: ../plugin.py:252
 msgid "Upgrade"
 msgstr ""

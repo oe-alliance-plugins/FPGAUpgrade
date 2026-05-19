@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: 2018-10-14 14:04+0200\n"
 "Last-Translator: Manfred Aabye <openmanniland@gmx.de>\n"
 "Language-Team: Deutsch <> j-ot&Trial\n"
@@ -14,25 +14,32 @@ msgstr ""
 "X-Generator: Poedit 2.2\n"
 "X-Poedit-SourceCharset: iso-8859-15\n"
 
+#: ../plugin.py:211
 #, python-format
 msgid "%d / 100"
 msgstr "%d / 100"
 
+#: ../plugin.py:168
 msgid "Can't cancel during upgrade!!"
 msgstr "Upgrade kann nciht unterbrochen werden!!"
 
+#: ../plugin.py:251
 msgid "Close"
 msgstr "Schließen"
 
+#: ../plugin.py:254
 msgid "Download"
 msgstr "Herunterladen"
 
+#: ../plugin.py:310
 msgid "Downloaded "
 msgstr "Heruntergeladen "
 
+#: ../plugin.py:312
 msgid "Downloading..."
 msgstr "Lade herunter..."
 
+#: ../plugin.py:205
 #, python-format
 msgid ""
 "Error[%d] : %s.\n"
@@ -41,17 +48,22 @@ msgstr ""
 "Fehler[%d] : %s.\n"
 "Drücke OK zum Verlassen."
 
+#: ../plugin.py:249 ../plugin.py:415
 msgid "FPGA Upgrade"
 msgstr "FPGA Upgrade"
 
+#: ../plugin.py:367
 msgid "File not found"
 msgstr "Datei nicht gefunden"
 
+#: ../plugin.py:170
 msgid "Status : 0%"
 msgstr "Status : 0%"
 
+#: ../plugin.py:191
 msgid "Succeed"
 msgstr "Erfolgreich"
 
+#: ../plugin.py:252
 msgid "Upgrade"
 msgstr "Upgrade"

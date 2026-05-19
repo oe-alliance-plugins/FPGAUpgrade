@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FPGAUpgrade\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: 2017-07-05 18:23+0300\n"
 "Last-Translator: Vytenis P. <vyteniui@gmail.com>\n"
 "Language-Team: Vytenis P.\n"
@@ -16,25 +16,32 @@ msgstr ""
 "X-Generator: Poedit 2.0.2\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+#: ../plugin.py:211
 #, python-format
 msgid "%d / 100"
 msgstr "%d / 100"
 
+#: ../plugin.py:168
 msgid "Can't cancel during upgrade!!"
 msgstr "Atnaujinimo metu nutraukti negalima!"
 
+#: ../plugin.py:251
 msgid "Close"
 msgstr "Uždaryti"
 
+#: ../plugin.py:254
 msgid "Download"
 msgstr "Parsiųsti"
 
+#: ../plugin.py:310
 msgid "Downloaded "
 msgstr "Parsiųsta "
 
+#: ../plugin.py:312
 msgid "Downloading..."
 msgstr "Parsiunčiama..."
 
+#: ../plugin.py:205
 #, python-format
 msgid ""
 "Error[%d] : %s.\n"
@@ -43,17 +50,22 @@ msgstr ""
 "Klaida [%d] : %s.\n"
 "Kad užverti, spauskite 'OK'."
 
+#: ../plugin.py:249 ../plugin.py:415
 msgid "FPGA Upgrade"
 msgstr "FPGA atnaujinimas"
 
+#: ../plugin.py:367
 msgid "File not found"
 msgstr "Failo nerasta"
 
+#: ../plugin.py:170
 msgid "Status : 0%"
 msgstr "Stovis: 0%"
 
+#: ../plugin.py:191
 msgid "Succeed"
 msgstr "Pavyko"
 
+#: ../plugin.py:252
 msgid "Upgrade"
 msgstr "Atnaujinti"

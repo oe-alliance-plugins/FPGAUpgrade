@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: 2016-05-07 13:24+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: CÜNEYT OCAKLILAR <ocaklilar@gmail.com>\n"
@@ -17,27 +17,34 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Bookmarks: 2450,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
+#: ../plugin.py:211
 #, python-format
 msgid "%d / 100"
 msgstr "%d / 100"
 
+#: ../plugin.py:168
 msgid "Can't cancel during upgrade!!"
 msgstr "Yükseltme sırasında iptal edilemez!!"
 
 #
+#: ../plugin.py:251
 msgid "Close"
 msgstr "Kapa"
 
 #
+#: ../plugin.py:254
 msgid "Download"
 msgstr "İndir"
 
+#: ../plugin.py:310
 msgid "Downloaded "
 msgstr "İndirildi"
 
+#: ../plugin.py:312
 msgid "Downloading..."
 msgstr "İndiriliyor..."
 
+#: ../plugin.py:205
 #, python-format
 msgid ""
 "Error[%d] : %s.\n"
@@ -46,17 +53,22 @@ msgstr ""
 "Hata[%d] : %s.\n"
 "Çıkmak için OK."
 
+#: ../plugin.py:249 ../plugin.py:415
 msgid "FPGA Upgrade"
 msgstr "FPGA Yükselt"
 
+#: ../plugin.py:367
 msgid "File not found"
 msgstr "Dosya bulunamadı"
 
+#: ../plugin.py:170
 msgid "Status : 0%"
 msgstr "Durum : 0%"
 
+#: ../plugin.py:191
 msgid "Succeed"
 msgstr "Başarılı"
 
+#: ../plugin.py:252
 msgid "Upgrade"
 msgstr "Yükselt"

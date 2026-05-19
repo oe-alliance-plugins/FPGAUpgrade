@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: 2022-11-04 08:54+0100\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <>\n"
@@ -17,44 +17,58 @@ msgstr ""
 "X-Generator: Lokalize 22.08.2\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
 
+#: ../plugin.py:211
 #, python-format
 msgid "%d / 100"
 msgstr "%d / 100"
 
+#: ../plugin.py:168
 msgid "Can't cancel during upgrade!!"
 msgstr "Impossibile annullare durante l'aggiornamento!!"
 
 #
+#: ../plugin.py:251
 msgid "Close"
 msgstr "Chiudi"
 
 #
+#: ../plugin.py:254
 msgid "Download"
 msgstr "Download"
 
+#: ../plugin.py:310
 msgid "Downloaded "
 msgstr "Scaricato"
 
+#: ../plugin.py:312
 msgid "Downloading..."
 msgstr "Download in corso..."
 
+#: ../plugin.py:205
 #, python-format
 msgid ""
 "Error[%d] : %s.\n"
 "Press OK to exit."
-msgstr "Errore[%d] : %s.\nPremi OK per uscire."
+msgstr ""
+"Errore[%d] : %s.\n"
+"Premi OK per uscire."
 
+#: ../plugin.py:249 ../plugin.py:415
 msgid "FPGA Upgrade"
 msgstr "Aggiornamento FPGA"
 
+#: ../plugin.py:367
 msgid "File not found"
 msgstr "File non trovato"
 
+#: ../plugin.py:170
 msgid "Status : 0%"
 msgstr "Stato: 0%"
 
+#: ../plugin.py:191
 msgid "Succeed"
 msgstr "Successo"
 
+#: ../plugin.py:252
 msgid "Upgrade"
 msgstr "Aggiornamento"
